@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "AFNetworking.h"
 
-#define eC_BASE_URL @"https://eCashlytics.com/api/v2"
+#define eC_BASE_URL @""
 
 
 @implementation eCDataCenter : NSObject 
