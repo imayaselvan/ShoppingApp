@@ -1,5 +1,5 @@
 //
-//  NearbyViewController.h
+//  MyCartViewController.h
 //  eComm
 //
 //  Created by Imayaselvan on 24/06/15.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
-@interface NearbyViewController : UIViewController
+
+@interface MyCartViewController : UIViewController
 
 @end
