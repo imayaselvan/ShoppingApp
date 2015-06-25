@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ItemListViewController : UIViewController
-
+{
+    
+}
+@property(nonatomic ,strong)NSString *title;
 @end

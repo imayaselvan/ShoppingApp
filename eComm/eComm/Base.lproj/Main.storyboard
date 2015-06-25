@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Nearby View Controller-->
@@ -41,9 +42,28 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ssK-FU-zMz">
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="uvV-1c-IZd"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="lMs-kA-CWe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ssK-FU-zMz" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="240-FX-G7v"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ssK-FU-zMz" secondAttribute="bottom" constant="-64" id="2oe-K3-ogR"/>
+                            <constraint firstItem="ssK-FU-zMz" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="FGc-Iy-IBm"/>
+                            <constraint firstAttribute="trailing" secondItem="ssK-FU-zMz" secondAttribute="trailing" id="vHA-9N-HuJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wyi-0o-1gu"/>
+                    <connections>
+                        <outlet property="ShopListTbl" destination="ssK-FU-zMz" id="6mg-AZ-ajS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

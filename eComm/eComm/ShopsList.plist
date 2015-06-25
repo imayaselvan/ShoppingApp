@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FlipKart</key>
+	<string>https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzIDZSL5vXIQnwIx92KiRHd_w3VEa_FOKcS8Jjsru6SeRu7JusjAOS4w</string>
+	<key>Myntra</key>
+	<string>https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyAobpU5Y7kLi_AVvA0RSn6c1HHEObRJ4n3ewqryQFwryhopS_EjtQ15sG-g</string>
+	<key>PayTM</key>
+	<string>http://a3.mzstatic.com/us/r30/Purple7/v4/58/bb/02/58bb0219-efce-0200-3ee2-861a47b9fbae/icon175x175.jpeg</string>
+	<key>Amazon</key>
+	<string>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-K-T3nlNCyZobTG9Qhogp-HAM9H7A6N7mpd9L-ro4rPZA8J_8Mme3olw</string>
+</dict>
+</plist>

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		28238EC363A5DE6E0424C7A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FFACB3C1AC11B5C4864FC7 /* libPods.a */; };
+		D936BD721B3C5DDE00F8993D /* ShopsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D936BD711B3C5DDE00F8993D /* ShopsList.plist */; };
+		D936BD871B3C6A4600F8993D /* itemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D936BD861B3C6A4600F8993D /* itemTableViewCell.m */; };
+		D936BD8D1B3C6CE100F8993D /* eCommUtillities.m in Sources */ = {isa = PBXBuildFile; fileRef = D936BD8C1B3C6CE100F8993D /* eCommUtillities.m */; };
+		D936BD8F1B3C71A200F8993D /* items.plist in Resources */ = {isa = PBXBuildFile; fileRef = D936BD8E1B3C71A200F8993D /* items.plist */; };
+		D95F92C11B3C5966000D4976 /* eCommModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D95F92BF1B3C5966000D4976 /* eCommModel.xcdatamodeld */; };
 		D9B2AEC31B3B245100E1F576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B2AEC21B3B245100E1F576 /* main.m */; };
 		D9B2AEC61B3B245100E1F576 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B2AEC51B3B245100E1F576 /* AppDelegate.m */; };
 		D9B2AECF1B3B245100E1F576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B2AECD1B3B245100E1F576 /* Main.storyboard */; };
@@ -46,6 +51,13 @@
 /* Begin PBXFileReference section */
 		0695580E70CEA60C5795DC5B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		82FFACB3C1AC11B5C4864FC7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D936BD711B3C5DDE00F8993D /* ShopsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShopsList.plist; sourceTree = "<group>"; };
+		D936BD851B3C6A4600F8993D /* itemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemTableViewCell.h; sourceTree = "<group>"; };
+		D936BD861B3C6A4600F8993D /* itemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = itemTableViewCell.m; sourceTree = "<group>"; };
+		D936BD8B1B3C6CE100F8993D /* eCommUtillities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eCommUtillities.h; sourceTree = "<group>"; };
+		D936BD8C1B3C6CE100F8993D /* eCommUtillities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eCommUtillities.m; sourceTree = "<group>"; };
+		D936BD8E1B3C71A200F8993D /* items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = items.plist; sourceTree = "<group>"; };
+		D95F92C01B3C5966000D4976 /* eCommModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eCommModel.xcdatamodel; sourceTree = "<group>"; };
 		D9B2AEBD1B3B245100E1F576 /* eComm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eComm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B2AEC11B3B245100E1F576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9B2AEC21B3B245100E1F576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -131,9 +143,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D936BD731B3C5EC600F8993D /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D936BD851B3C6A4600F8993D /* itemTableViewCell.h */,
+				D936BD861B3C6A4600F8993D /* itemTableViewCell.m */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		D936BD811B3C5FB900F8993D /* SuperClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SuperClasses;
+			sourceTree = "<group>";
+		};
+		D95F92BD1B3C55A4000D4976 /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				D936BD711B3C5DDE00F8993D /* ShopsList.plist */,
+				D936BD8E1B3C71A200F8993D /* items.plist */,
+			);
+			name = "Sample Data";
+			sourceTree = "<group>";
+		};
+		D95F92BE1B3C5897000D4976 /* Dataparser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dataparser;
+			sourceTree = "<group>";
+		};
 		D9B2AEB41B3B245100E1F576 = {
 			isa = PBXGroup;
 			children = (
+				D936BD8B1B3C6CE100F8993D /* eCommUtillities.h */,
+				D936BD8C1B3C6CE100F8993D /* eCommUtillities.m */,
+				D95F92BF1B3C5966000D4976 /* eCommModel.xcdatamodeld */,
 				D9B2AEBF1B3B245100E1F576 /* eComm */,
 				D9B2AEDC1B3B245100E1F576 /* eCommTests */,
 				D9B2AEBE1B3B245100E1F576 /* Products */,
@@ -154,6 +201,8 @@
 		D9B2AEBF1B3B245100E1F576 /* eComm */ = {
 			isa = PBXGroup;
 			children = (
+				D95F92BE1B3C5897000D4976 /* Dataparser */,
+				D95F92BD1B3C55A4000D4976 /* Sample Data */,
 				D9D276431B3B4E640080AAB3 /* DataCenter */,
 				D9D276401B3B4E600080AAB3 /* eCDataCenter.h */,
 				D9D276411B3B4E600080AAB3 /* eCDataCenter.m */,
@@ -216,6 +265,8 @@
 		D9B2AEEB1B3B26CA00E1F576 /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D936BD811B3C5FB900F8993D /* SuperClasses */,
+				D936BD731B3C5EC600F8993D /* TableViewCells */,
 				D9B2AEEC1B3B26F700E1F576 /* NearbyViewController.h */,
 				D9B2AEED1B3B26F700E1F576 /* NearbyViewController.m */,
 				D9B2AEF11B3B27BD00E1F576 /* ShopListViewController.h */,
@@ -354,7 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B2AECF1B3B245100E1F576 /* Main.storyboard in Resources */,
+				D936BD8F1B3C71A200F8993D /* items.plist in Resources */,
 				D9B2AED41B3B245100E1F576 /* LaunchScreen.xib in Resources */,
+				D936BD721B3C5DDE00F8993D /* ShopsList.plist in Resources */,
 				D9B2AED11B3B245100E1F576 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,12 +470,15 @@
 				D9D2762F1B3B31920080AAB3 /* SDWebImageDownloader.m in Sources */,
 				D9D276371B3B31A60080AAB3 /* UIButton+WebCache.m in Sources */,
 				D9D276421B3B4E600080AAB3 /* eCDataCenter.m in Sources */,
+				D936BD871B3C6A4600F8993D /* itemTableViewCell.m in Sources */,
 				D9B2AEF31B3B27BD00E1F576 /* ShopListViewController.m in Sources */,
 				D9B2AEF91B3B2A5200E1F576 /* MyCartViewController.m in Sources */,
 				D9B2AEC31B3B245100E1F576 /* main.m in Sources */,
+				D936BD8D1B3C6CE100F8993D /* eCommUtillities.m in Sources */,
 				D9D276311B3B31920080AAB3 /* SDWebImageManager.m in Sources */,
 				D9D2762E1B3B31920080AAB3 /* SDWebImageDecoder.m in Sources */,
 				D9D2762C1B3B31920080AAB3 /* SDImageCache.m in Sources */,
+				D95F92C11B3C5966000D4976 /* eCommModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,6 +691,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D95F92BF1B3C5966000D4976 /* eCommModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D95F92C01B3C5966000D4976 /* eCommModel.xcdatamodel */,
+			);
+			currentVersion = D95F92C01B3C5966000D4976 /* eCommModel.xcdatamodel */;
+			path = eCommModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D9B2AEB51B3B245100E1F576 /* Project object */;
 }
